@@ -26,18 +26,41 @@ Treinamento Process Mining
 <h2>Criando um Log de eventos</h2>
 <h3>Criando o log de eventos</h3>
 <p>CSV FILE<br />
-CASE,ACTIVITY,DATE,
-hospital_a,apresentar influenciador,01/01/2021,
-hospital_a,apresentar decisor,15/01/2021,
-hospital_a,negociação de preço,30/01/2021,
-hospital_a,contrato juridico,28/02/2021,
-hospital_a,fechamento,30/03/2021,
-hospital_a,apresentar influenciador,01/01/2021,
-hospital_a,apresentar decisor,15/01/2021,
-hospital_a,demonstração de valor,15/02/2021,
-hospital_a,negociação de preço,28/02/2021,
-hospital_a,contrato jurídico,28/04/2021,
-
+<table style="border:1px">
+<tr>
+<td>CASE</td><td>ACTIVITY</td><td>DATE</td>
+</tr>
+<tr>
+<td>hospital_a</td><td>apresentar influenciador</td><td>01/01/2021</td>
+</tr>
+<tr>
+<td>hospital_a</td><td>apresentar decisor</td><td>15/01/2021</td>
+</tr>
+<tr>
+<td>hospital_a</td><td>negociação de preço</td><td>30/01/2021</td>
+</tr>
+<tr>
+<td>hospital_a</td><td>contrato juridico</td><td>28/02/2021</td>
+</tr>
+<tr>
+<td>hospital_a</td><td>fechamento</td><td>30/03/2021</td>
+</tr>
+<tr>
+<td>hospital_b</td><td>apresentar influenciador</td><td>01/01/2021</td>
+</tr>
+<tr>
+<td>hospital_b</td><td>apresentar decisor</td><td>15/01/2021</td>
+</tr>
+<tr>
+<td>hospital_b</td><td>demonstração de valor</td><td>15/02/2021</td>
+</tr>
+<tr>
+<td>hospital_b</td><td>negociação de preço</td><td>28/02/2021</td>
+</tr>
+<tr>
+<td>hospital_b</td><td>contrato jurídico</td><td>28/04/2021</td>
+</tr>
+</table>
 <h3>Sistema</h3>
 <p>O sistema conta com templates de carregamento e um padrão para casos genéricos. Cada template destina-se a diferenciar etapas do processo específico tomando como base um </p>
 <p>Após o carregamento precisamos definir o mapeamento da tabela com um "de x para" entre as colunas e os campos da plataforma de modo que possam ser lidos corretamente.</p>
