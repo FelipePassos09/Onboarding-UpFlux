@@ -105,3 +105,23 @@ Treinamento Process Mining
 		</ul>
 	</p>
 </p>
+<h3>Filtros</h3>
+<h4>Atributos</h4>
+<p>Temos, também, a possibilidade de desmembrar as nossas analises através ad ferramenta de filtros, obtendo assim novos valores e medições.<br /> <br /> Basta clicarmos no ícone de filtro e selecionar o atributo que iremos levar em consideração para recolhermos nossa métrica, lá podemos selecionar qualquer um dos campos carregados em nosso log de eventos. Desse modo teremos uma segmentação da nossa análise apenas para a condição especificada, desse modo facilitando o entendimento dos dados apresentados e do fluxo como seguiu. Além disso, em casos onde diagnosticamos uma pulverização muito grande de comportamentos, é bastante eficaz para o tratamento individual de cada atributo e seu entendimento mais simplificado.</p>
+<h4>Tempo</h4>
+<p>No modo tempo podemos segmentar nossos dados em virtude do timestamp do case, assim podemos observar períodos específicos de comportamentos, e ter indicadores levando em consideração sazonalidade, periodicidade e situações adversas temporarias.</p>
+<h4>Extremidade</h4>
+<p>:/</p>
+<h4>Relações</h4>
+<p>Como o nome indica, esse filtro permite segmentar as atividades pelas suas relações, criando visualizações de fugas ou aderencia ao processo.</p>
+<h4>Ponto de Interesse</h4>
+<p>Esse filtro permite segmentar nossa visualização por um dado específico dentro de um range de tempo, desse modo podemos visualizar a tendencia e relacionamentos desse ponto dentro da faixa definida e obter insights direcionados.</p>
+<h4>Performance</h4>
+<p>Aqui podemos definir a segmentação por resultados gerados, ou seja, a performance do processo. Nesse caso filtramos o conteúdo estabelecendo nossos interesses mínimos e máximos para visualizar os resultados dentro dessa faixa, seja para vermos tudo que atendeu às expectatiavs como para observar melhor aqueles que consideramos tendo fugido dos objetivos esperados.</p>
+
+<h3>Funções dos Filtros</h3>
+<p>Através dos filtros podemos gerar visualizações mais assertivas e "limpas" dos processos analisados, de modo que conseguimos estabelecer um melhor entendimento do processo analisado e criar conceitos mais eficazes para sua adequação.<br/>Em conjunto a isso temos a possibilidade de combinar os filtros em busca de detalhes antes perdidos entre o log de eventos como, quanto de prejuízo tivemos em decorrência da fuga de alguma etapa do processo ou como uma etapa do processo pode ser removida para agregar maior eficiência e assertividade na execução do fluxo. Isso tudo requer um estudo aprofundado que é favorecido com o uso de segmentações melhor aplicadas.</p>
+
+<h1>Aula 3</h1>
+<h2>Extraindo valor dos dados</h2>
+<p></p>
