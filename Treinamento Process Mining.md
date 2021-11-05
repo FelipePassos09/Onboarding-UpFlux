@@ -150,10 +150,31 @@ Com esse conjunto de filtros chegamos ao seguinte cenário:<br />
 		<li>Ordenação: Esse define a ordenação a ser aplicada, nesse caso podemos ordenar por atributo ou indicador, em ordem crescente e decrescente.</li>
 	</ul>
 
-<br />Em seguida, após criarmos nossos campos e definirmos os dados a serem analisados pela view, basta aplicar as modificações e, por fim, publicar nosso dash. Todos os dashs, mesmo após publicados, podem ser editados a partir de suas respectivas telas pelo ícone de configurações no canto superior direito da tela.<br />
+<br />
+Também podemos habilitar ou não a exportação dos dados contidos nas views marcando a opção de permissão, nesse caso o dashboard irá apresentar um botão para que seja feito o download dessas informações em um arquivo .xlsx.<br />
+Em seguida, após criarmos nossos campos e definirmos os dados a serem analisados pela view, basta aplicar as modificações e, por fim, publicar nosso dash. Todos os dashs, mesmo após publicados, podem ser editados a partir de suas respectivas telas pelo ícone de configurações no canto superior direito da tela.<br />
 Para criarmos um rank ou limitarmos os resultados exibidos pelas views, seja por melhor performance ou geração de indicadores mais eficientes, precisamos sempre limitar os resultados nas configurações da view (isso é uma das boas práticas a serem adotadas para que não tenhamos problemas de proformance).<br />Para criarmos um rank basta usarmos a funcionalidade de limite juntamente com a ordenação, dessa forma criamos um rank seja do maior para menor ou vice e versa, e definimos os itens a partir do número limite.
 </p>
 
 <p>Ainda no dashboard, a tela de apresentação é ilimitada verticalmente o que permite organizar os itens de maneira mais fluída e responsiva porém traz impactos na performance de carregamento em virtude do tamanho e quantidade de dados e views apresentadas. Em virtude a isso, a única limitação para criação do dashboard é a criatividade, habilidade e performance esperada, podendo dessa forma criarmos um diagnóstico completo do processo em uma única tela.</p>
 
 <p>Por fim, podemos exportar o conteúdo da dashboard em um arquivo .json, isso é importante pois nos permite "clonar" essa view para outros abientes, contato que os dados possuam as mesmas nomenclaturas.</p>
+
+<h1>Aula 4</h1>
+<h2>Analise de Conformidade</h2>
+<h3>Modelos de Referência</h3>
+<p>em linhas gerais, os modelos de referência são as regras que padronizam o nosso processo e que fiscalizam quando há fugas.</p>
+
+<p>Para criarmos um novo modelo de referência basta irmos ao menú dedicado e criar um novo modelo, mantendo todas as flags ativas clicamos em modelo e, em seguida definimos as etapas e transições esperadas para o processo arastando os respectivos itens para a área de plotagem e definindo as ligações entre cada transição.<br /><br />Aqui, cada ícone representa uma estrutura do processo, sendo cada uma delas:
+	<ul>
+		<li>Retângulo: Atividade → é o atributo que iremos definir para a etapa.</li>
+		<li>Inicio / Fim → são, respectivamente, onde o processo irá começar e terminar.</li>
+		<li>Losango: Paralelo → define uma bifurcação onde o processo irá correr paralelamente.</li>
+		<li>Losango: Inclusivo → irá definir quando o processo irá retornar ao fluxo corrente ou se unir à outra linha de processo.</li>
+		<li>Losango: Exclusivo → irá definir quando um caminho do processo irá deixar de existir ou ser desqualificado para seguir com o processo.</li>
+		<li>Retângulo: Subprocesso → define um processo aninhado ao processo principal, como consequencia ou depêndencia.</li>
+	</ul>
+<br />
+pausa em https://youtu.be/6T7092a09gI?t=3161
+</p>
+
