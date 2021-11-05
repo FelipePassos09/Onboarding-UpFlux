@@ -1,0 +1,930 @@
+{
+    "droppedItems": [
+        {
+            "name": "custom_component_chart_pie",
+            "icon": "fa fa-pie-chart",
+            "group": "chart",
+            "type": "CHART_PIE",
+            "vertical": true,
+            "showlegend": true,
+            "RowsLimit": {
+                "hasLimit": true,
+                "Limit": 50,
+                "ShowOthers": false
+            },
+            "IgnoreNullValue": true,
+            "canExport": true,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "chart": {
+                "type": "pie"
+            },
+            "margin": {
+                "t": 20,
+                "l": 20,
+                "r": 20,
+                "b": 20
+            },
+            "hideCard": false,
+            "filterOthers": true,
+            "filteredByOthers": true,
+            "title": {
+                "size": 16,
+                "weight": 5,
+                "color": "#666",
+                "background": {
+                    "color": "#ffffff"
+                },
+                "space": {
+                    "x": 2,
+                    "y": 2
+                },
+                "text": "Índice de satisfação"
+            },
+            "style": {
+                "position": {
+                    "left": 0.30921459492888065,
+                    "top": 0.2472187886279357
+                },
+                "width": 29.761904761904763,
+                "height": 30.284301606922128,
+                "z_index": 30
+            },
+            "filterMode": {
+                "id": "selectonly",
+                "text": "filter_select_only"
+            },
+            "dimensions": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "Customer Satisfaction",
+                        "Type": "string",
+                        "Format": null,
+                        "IsAuditInfo": false
+                    },
+                    "Type": "Attribute",
+                    "name": "Customer Satisfaction",
+                    "type_value": "string",
+                    "column": "Customer Satisfaction",
+                    "sort": "ascend"
+                }
+            ],
+            "sortings": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "Customer Satisfaction",
+                        "Type": "string",
+                        "Format": null,
+                        "IsAuditInfo": false
+                    },
+                    "Type": "Attribute",
+                    "name": "Customer Satisfaction",
+                    "type_value": "string",
+                    "column": "Customer Satisfaction",
+                    "sort": "ascend"
+                }
+            ],
+            "kpis": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "none",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "listGoal": [],
+            "hasAuditDimension": false,
+            "hasTimeKpi": false,
+            "statusList": [],
+            "filter": {
+                "filters": [],
+                "showInteraction": false
+            },
+            "showValueOverLabel": "auto",
+            "threshold": [],
+            "isLoading": false,
+            "hasFilter": false
+        },
+        {
+            "name": "custom_component_chart_column",
+            "icon": "fa fa-bar-chart",
+            "group": "chart",
+            "type": "CHART_COLUMN",
+            "vertical": true,
+            "showlegend": false,
+            "RowsLimit": {
+                "hasLimit": true,
+                "Limit": 50,
+                "ShowOthers": false
+            },
+            "showValueOverLabel": "auto",
+            "IgnoreNullValue": true,
+            "canExport": true,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "chart": {
+                "type": "bar"
+            },
+            "margin": {
+                "t": 20,
+                "l": 35,
+                "r": 20,
+                "b": 50
+            },
+            "hideCard": false,
+            "filterOthers": true,
+            "filteredByOthers": true,
+            "title": {
+                "size": 16,
+                "weight": 5,
+                "color": "#666",
+                "background": {
+                    "color": "#ffffff"
+                },
+                "space": {
+                    "x": 2,
+                    "y": 2
+                },
+                "text": "Distribuiçao de casos por dia da semana"
+            },
+            "style": {
+                "position": {
+                    "left": 61.14718614718615,
+                    "top": 35.84672435105068
+                },
+                "width": 36.10080395794682,
+                "height": 27.6885043263288,
+                "z_index": 30
+            },
+            "filterMode": {
+                "id": "selectonly",
+                "text": "filter_select_only"
+            },
+            "dimensions": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "Weekday",
+                        "Type": "string",
+                        "Format": null,
+                        "IsAuditInfo": false
+                    },
+                    "Type": "Attribute",
+                    "name": "Weekday",
+                    "type_value": "string",
+                    "column": "Weekday",
+                    "sort": "none"
+                }
+            ],
+            "sortings": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "descend",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "kpis": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "descend",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "listGoal": [],
+            "hasAuditDimension": false,
+            "hasTimeKpi": false,
+            "statusList": [],
+            "filter": {
+                "filters": [],
+                "showInteraction": false
+            },
+            "threshold": [],
+            "isLoading": false,
+            "hasFilter": false
+        },
+        {
+            "name": "menu_process_map",
+            "icon": "fa fa-map-o",
+            "type": "PROCESS_MAP",
+            "variable": "ProcessMap",
+            "group": "processMap",
+            "direction": 90,
+            "activitySlider": {
+                "value": 100,
+                "options": {
+                    "floor": 0,
+                    "ceil": 100,
+                    "vertical": false,
+                    "showSelectionBar": true,
+                    "hideLimitLabels": true,
+                    "hidePointerLabels": true,
+                    "animate": false
+                }
+            },
+            "connectionSlider": {
+                "value": 56,
+                "options": {
+                    "floor": 0,
+                    "ceil": 100,
+                    "vertical": false,
+                    "showSelectionBar": true,
+                    "hideLimitLabels": true,
+                    "hidePointerLabels": true,
+                    "animate": false
+                }
+            },
+            "filterOthers": true,
+            "filteredByOthers": true,
+            "title": {
+                "size": 16,
+                "weight": 5,
+                "color": "#666",
+                "background": {
+                    "color": "#ffffff"
+                },
+                "space": {
+                    "x": 2,
+                    "y": 2
+                },
+                "text": "Mapa do Processo"
+            },
+            "style": {
+                "position": {
+                    "left": 32.73809523809524,
+                    "top": -0.4944375772558714
+                },
+                "width": 27.110389610389614,
+                "height": 60.69221260815822,
+                "z_index": 45
+            },
+            "filterMode": {
+                "id": "selectonly",
+                "text": "filter_select_only"
+            },
+            "primaryOption": 1,
+            "secondOption": 0,
+            "filter": {
+                "filters": [
+                    {
+                        "id": "attr",
+                        "name": "filter_attribute",
+                        "filterSearch": "",
+                        "filterBy": "Atividade",
+                        "isApplied": true,
+                        "isAuditRule": false,
+                        "selected": [
+                            "Order by phone",
+                            "Departure pizza"
+                        ],
+                        "begin": [],
+                        "end": [],
+                        "filterMode": "selectonly",
+                        "minRange": null,
+                        "maxRange": null,
+                        "min": "",
+                        "max": ""
+                    }
+                ],
+                "showInteraction": false,
+                "index": 0,
+                "isModal": false
+            },
+            "showValueOverLabel": "auto",
+            "threshold": [],
+            "isLoading": false,
+            "hasFilter": false
+        },
+        {
+            "name": "custom_component_chart_column",
+            "icon": "fa fa-bar-chart",
+            "group": "chart",
+            "type": "CHART_COLUMN",
+            "vertical": true,
+            "showlegend": false,
+            "RowsLimit": {
+                "hasLimit": true,
+                "Limit": 50,
+                "ShowOthers": true
+            },
+            "showValueOverLabel": "auto",
+            "IgnoreNullValue": true,
+            "canExport": true,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "chart": {
+                "type": "bar"
+            },
+            "margin": {
+                "t": 20,
+                "l": 35,
+                "r": 20,
+                "b": 80
+            },
+            "hideCard": false,
+            "filterOthers": true,
+            "filteredByOthers": true,
+            "title": {
+                "size": 16,
+                "weight": 5,
+                "color": "#666",
+                "background": {
+                    "color": "#ffffff"
+                },
+                "space": {
+                    "x": 2,
+                    "y": 2
+                },
+                "text": "Canal de Distribuição"
+            },
+            "style": {
+                "position": {
+                    "left": 60.76066790352505,
+                    "top": 64.40049443757727
+                },
+                "width": 37.569573283859,
+                "height": 30.655129789864027,
+                "z_index": 60
+            },
+            "filterMode": {
+                "id": "selectonly",
+                "text": "filter_select_only"
+            },
+            "dimensions": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "Distribution Channel",
+                        "Type": "string",
+                        "Format": null,
+                        "IsAuditInfo": false
+                    },
+                    "Type": "Attribute",
+                    "name": "Distribution Channel",
+                    "type_value": "string",
+                    "column": "Distribution Channel",
+                    "sort": "none"
+                }
+            ],
+            "sortings": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "descend",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "kpis": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "descend",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "listGoal": [],
+            "hasAuditDimension": false,
+            "hasTimeKpi": false,
+            "statusList": [],
+            "filter": {
+                "filters": [],
+                "showInteraction": false
+            },
+            "threshold": [],
+            "isLoading": false,
+            "hasFilter": false
+        },
+        {
+            "name": "custom_component_chart_pie",
+            "icon": "fa fa-pie-chart",
+            "group": "chart",
+            "type": "CHART_PIE",
+            "vertical": true,
+            "showlegend": true,
+            "RowsLimit": {
+                "hasLimit": true,
+                "Limit": 50,
+                "ShowOthers": false
+            },
+            "IgnoreNullValue": true,
+            "canExport": true,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "chart": {
+                "type": "pie"
+            },
+            "margin": {
+                "t": 20,
+                "l": 20,
+                "r": 20,
+                "b": 20
+            },
+            "hideCard": false,
+            "filterOthers": true,
+            "filteredByOthers": true,
+            "title": {
+                "size": 16,
+                "weight": 5,
+                "color": "#666",
+                "background": {
+                    "color": "#ffffff"
+                },
+                "space": {
+                    "x": 2,
+                    "y": 2
+                },
+                "text": "Tamanho"
+            },
+            "style": {
+                "position": {
+                    "left": 0.6184291898577613,
+                    "top": 31.396786155747836
+                },
+                "width": 29.761904761904763,
+                "height": 30.778739184178,
+                "z_index": 75
+            },
+            "filterMode": {
+                "id": "selectonly",
+                "text": "filter_select_only"
+            },
+            "dimensions": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "Pizza Size",
+                        "Type": "string",
+                        "Format": null,
+                        "IsAuditInfo": false
+                    },
+                    "Type": "Attribute",
+                    "name": "Pizza Size",
+                    "type_value": "string",
+                    "column": "Pizza Size",
+                    "sort": "none"
+                }
+            ],
+            "sortings": [],
+            "kpis": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "none",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "listGoal": [],
+            "hasAuditDimension": false,
+            "hasTimeKpi": false,
+            "statusList": [],
+            "filter": {
+                "filters": [],
+                "showInteraction": false
+            },
+            "showValueOverLabel": "auto",
+            "threshold": [],
+            "isLoading": false,
+            "hasFilter": false
+        },
+        {
+            "name": "custom_component_chart_column",
+            "icon": "fa fa-bar-chart",
+            "group": "chart",
+            "type": "CHART_COLUMN",
+            "vertical": true,
+            "showlegend": false,
+            "RowsLimit": {
+                "hasLimit": true,
+                "Limit": 50,
+                "ShowOthers": false
+            },
+            "showValueOverLabel": "auto",
+            "IgnoreNullValue": true,
+            "canExport": true,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "chart": {
+                "type": "bar"
+            },
+            "margin": {
+                "t": 20,
+                "l": 35,
+                "r": 20,
+                "b": 80
+            },
+            "hideCard": false,
+            "filterOthers": true,
+            "filteredByOthers": true,
+            "title": {
+                "size": 16,
+                "weight": 5,
+                "color": "#666",
+                "background": {
+                    "color": "#ffffff"
+                },
+                "space": {
+                    "x": 2,
+                    "y": 2
+                },
+                "text": "Localidade"
+            },
+            "style": {
+                "position": {
+                    "left": 61.201298701298704,
+                    "top": 0.2472187886279357
+                },
+                "width": 35.93073593073593,
+                "height": 35.10506798516687,
+                "z_index": 90
+            },
+            "filterMode": {
+                "id": "selectonly",
+                "text": "filter_select_only"
+            },
+            "dimensions": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "Customer Location",
+                        "Type": "string",
+                        "Format": null,
+                        "IsAuditInfo": false
+                    },
+                    "Type": "Attribute",
+                    "name": "Customer Location",
+                    "type_value": "string",
+                    "column": "Customer Location",
+                    "sort": "none"
+                }
+            ],
+            "sortings": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "descend",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "kpis": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "descend",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "listGoal": [],
+            "hasAuditDimension": false,
+            "hasTimeKpi": false,
+            "statusList": [],
+            "filter": {
+                "filters": [],
+                "showInteraction": false
+            },
+            "threshold": [],
+            "isLoading": false,
+            "hasFilter": false
+        },
+        {
+            "name": "custom_component_chart_area",
+            "icon": "fa fa-area-chart",
+            "group": "chart",
+            "type": "CHART_AREA",
+            "vertical": true,
+            "showlegend": false,
+            "RowsLimit": {
+                "hasLimit": true,
+                "Limit": 50,
+                "ShowOthers": false
+            },
+            "IgnoreNullValue": true,
+            "canExport": true,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "chart": {
+                "fill": "tozeroy",
+                "type": "scatter"
+            },
+            "margin": {
+                "t": 20,
+                "l": 35,
+                "r": 20,
+                "b": 80
+            },
+            "filterOthers": true,
+            "filteredByOthers": true,
+            "title": {
+                "size": 16,
+                "weight": 5,
+                "color": "#666",
+                "background": {
+                    "color": "#ffffff"
+                },
+                "space": {
+                    "x": 2,
+                    "y": 2
+                },
+                "text": "Variações por Satisfação"
+            },
+            "style": {
+                "position": {
+                    "left": 0.5411255411255411,
+                    "top": 64.77132262051916
+                },
+                "width": 30.465367965367967,
+                "height": 30.284301606922128,
+                "z_index": 105
+            },
+            "filterMode": {
+                "id": "selectonly",
+                "text": "filter_select_only"
+            },
+            "dimensions": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "Customer Satisfaction",
+                        "Type": "string",
+                        "Format": null,
+                        "IsAuditInfo": false
+                    },
+                    "Type": "Attribute",
+                    "name": "Customer Satisfaction",
+                    "type_value": "string",
+                    "column": "Customer Satisfaction",
+                    "sort": "none"
+                }
+            ],
+            "sortings": [],
+            "kpis": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "NumberOfVariants",
+                    "name": "Variantes",
+                    "kpiName": "kpiCustom",
+                    "type_value": "double",
+                    "column": "Variantes",
+                    "sort": "none",
+                    "operator": ""
+                }
+            ],
+            "listGoal": [],
+            "hasAuditDimension": false,
+            "hasTimeKpi": false,
+            "statusList": [],
+            "filter": {
+                "filters": [],
+                "showInteraction": false
+            },
+            "showValueOverLabel": "auto",
+            "threshold": [],
+            "isLoading": false,
+            "hasFilter": false
+        },
+        {
+            "name": "custom_component_chart_column",
+            "icon": "fa fa-bar-chart",
+            "group": "chart",
+            "type": "CHART_COLUMN",
+            "vertical": true,
+            "showlegend": false,
+            "RowsLimit": {
+                "hasLimit": true,
+                "Limit": 50,
+                "ShowOthers": true
+            },
+            "showValueOverLabel": "auto",
+            "IgnoreNullValue": true,
+            "canExport": true,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "chart": {
+                "type": "bar"
+            },
+            "margin": {
+                "t": 20,
+                "l": 57,
+                "r": 20,
+                "b": 80
+            },
+            "hideCard": false,
+            "filterOthers": true,
+            "filteredByOthers": true,
+            "title": {
+                "size": 16,
+                "weight": 5,
+                "color": "#666",
+                "background": {
+                    "color": "#ffffff"
+                },
+                "space": {
+                    "x": 2,
+                    "y": 2
+                },
+                "text": "Tipo de Cliente"
+            },
+            "style": {
+                "position": {
+                    "left": 32.00371057513915,
+                    "top": 64.40049443757727
+                },
+                "width": 27.906617192331485,
+                "height": 30.655129789864027,
+                "z_index": 120
+            },
+            "filterMode": {
+                "id": "selectonly",
+                "text": "filter_select_only"
+            },
+            "dimensions": [
+                {
+                    "color": null,
+                    "Attribute": {
+                        "Name": "Customer Type",
+                        "Type": "string",
+                        "Format": null,
+                        "IsAuditInfo": false
+                    },
+                    "Type": "Attribute",
+                    "name": "Customer Type",
+                    "type_value": "string",
+                    "column": "Customer Type",
+                    "sort": "none"
+                }
+            ],
+            "sortings": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "descend",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "kpis": [
+                {
+                    "Attribute": {
+                        "Name": "Caso",
+                        "Type": "double",
+                        "Format": null
+                    },
+                    "Type": "Attribute",
+                    "name": "Contagem de casos",
+                    "kpiName": "kpiDefault",
+                    "type_value": "double",
+                    "column": "Caso",
+                    "sort": "descend",
+                    "operator": "countDistinct",
+                    "color": null
+                }
+            ],
+            "listGoal": [],
+            "hasAuditDimension": false,
+            "hasTimeKpi": false,
+            "statusList": [],
+            "filter": {
+                "filters": [],
+                "showInteraction": false
+            },
+            "threshold": [],
+            "isLoading": false,
+            "hasFilter": false
+        }
+    ],
+    "filters": [
+        {
+            "id": "attr",
+            "name": "filter_attribute",
+            "filterSearch": "",
+            "filterBy": "Atividade",
+            "isApplied": true,
+            "isAuditRule": false,
+            "selected": [
+                "Order by phone"
+            ],
+            "begin": [],
+            "end": [],
+            "filterMode": "man",
+            "minRange": null,
+            "maxRange": null,
+            "min": "",
+            "max": ""
+        }
+    ]
+}

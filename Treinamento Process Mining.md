@@ -1,4 +1,4 @@
-Treinamento Process Mining
+<h1>Treinamento Process Mining</h1>
 
 <h1>Aula 1 - Processos, Importância e Process Mining</h1>
 	<p>Os processos precisam ser fluidos, desse modo temos maior agilidade em sua execução e maior eficácia.</p>
@@ -7,13 +7,13 @@ Treinamento Process Mining
 	<ul>
 	<li>Processos falham e isso é normal, na área da saúde isso é uma coisa inaceitável pois gera insatisfação imediata, riscos e prejuísos para o cliente.</li>
 	<li>Mapeamento de Fluxo de Valor - problemas
-		<ul>
-		<li>Subjetividade</li>
-		<li>Geralmente Mapeia-se apenas o caminho feliz</li>
-		<li>Nem todas as pessoas realmente conhecem o processo</li>
-		<li>Nem todos querem que os problemas apareçam</li>
-		<li>Tempo elevado na observação do processo</li>
-		</ul>
+			<ul>
+				<li>Subjetividade</li>
+				<li>Geralmente Mapeia-se apenas o caminho feliz</li>
+				<li>Nem todas as pessoas realmente conhecem o processo</li>
+				<li>Nem todos querem que os problemas apareçam</li>
+				<li>Tempo elevado na observação do processo</li>
+			</ul>
 		</li>
 <h2>o que é Mineração de Processos</h2>
 <p> Na literatura é a ideia de descobrir, monitorar e melhorar processos exrtraindo conhecimento a partir de logs de eventos(dados de processos) disponíveis nos sistemas de informações</p>
@@ -124,4 +124,36 @@ Treinamento Process Mining
 
 <h1>Aula 3</h1>
 <h2>Extraindo valor dos dados</h2>
-<p></p>
+<p>Como visto, usando filtros podemos analisar os casos de modo detalhado e direcionado, assim temos detalhes acerca dos indicadores esperados. De maneira direta podemos observar, pelo exemplo da pizzaria, que um pedido com a etapa de Call Customer possui tempo médio de 24.26 min até chegar à etapa de Departure Pizza. <br /><br />Para isso usamos a segunte combinação de filtros:
+	<ul>
+		<li>Filtro por Atributo - Selecionado atributo Order by Phone | Usando o parâmetro Casos que Contém</li>
+		<li>Filtro por Atributo - Selecionado atributo Call Costumer | Usando o parâmetro Casos que Contém</li>
+		<li>Filtro por Atributo - Selecionado Order by Phone e Departure Pizza | Usando o parâmetro Selecionar Somente</li>
+	</ul>
+	<br />
+Com esse conjunto de filtros chegamos ao seguinte cenário:<br />
+<img src="src/media/filtrodecasos.png">
+</p>
+<p>Como pudemos ver, entender e dominar os filtros nos permite identificarmos casos de analise simplificados e com valor agregado, coisa que na visualização crua se torna muito complicada e, por vezes, de difícil cálculo.<br>Ainda seguindo este exemplo, ao alterarmos o cenário para os casos que não contém a etapa Call Costumer o indicador muda ligeiramente, promovendo uma variação na média de tempo que sugere um impacto no processo: <br />
+<img src="src/media/filtrodecasos2.png">
+
+<h2>Variantes</h2>
+</p>As variantes são uma funcionalidade que nos permite realizar a análise das variações pelas quais o processo passou, gerando assim uma visão das fugas do processo. Nela temos uma visão em percentuais das fugas e o total de ocorrências<br />Basta acedermos à página e retirarmos os flgs que poderemos ver todas as fugas apresentadas.<br />Importante: a apresentação das fugas seguirá o filtro aplicado aos dados, ou seja, se tivermos um filtro qeu já exclua as fugas isso impactará na nossa visualização.<br />As flags nos ajudam a segmentar as ocorrências e gerar uma visualização limpa, levando em conta fatores de ordenação e loops, isso porque tais parâmetros são os maiores causadores de impactos no processo mas que, em alguns casos, são inerentes à atividade. Nesse caso as flags de agrupamento de loops une as etapas repetidas em uma unica etapa já o ignorar ordem ignora as variações de ordem trazendo o processo para o layout mais linear possivel.</p>
+<p>Expandindo os itens vemos a sequencia relacionada àquele percentual de modo linear, desta forma temos uma visão mais clara de como isso ocorreu, quais etapas ele seguiu, e quais os impactos e ações podem ser aplicadas para a correção daquela fuga específica.<br />junto a isso temos também os totais e médias relacionadas aos itens do log caregado.</p>
+<p>Vale ressaltar que as variações podem não ser relacionadas à erros reais no processo e sim à falta de integridade ou completude nos dados. Nesses casos teremos saltos de etapas, fugas devido tempos registrados errados ou loops por lançamentos duplicados.</p>
+
+<h2>Dashboards</h2>
+<p>A ferramenta de dashboards é um item à parte, o maior auxílio quanto à visualização da saúde do processo. Nela podemos definir parãmetros apra visualizar os idicadores coletados das analises anteriores de modo mais visual e direto, utilizando para isso gráficos e visualizações dinâmicas, e tendo a possibilidade de nos aprofundar nesses detalhes de maneira mais específica.<br />Os dashboards seguem a lógica das comumente conhecidas "Analises de BI" com a criação personalizada de indicadôres dinâmicos e com as ferramentas mais conhecidas da área, porém com alguma adições interessantes como a possibilidade de integrar o mapa de processos, indicadores de KPI, analises de perfromance e vários outros layouts. Além disso temos várias formas de criar os dashboards com campos específicos ou mesmo filtros pré-aplicados.<br />Para criarmos uma view basta abrirmos a opção componetes, arrastar a view que desejamos criar e na sua configuração aplicar os campos e parâmetros a serem utilizados. Esses campos e parâmertos possuem tanto possibildiades de totalizadores pré-definidos como relacionamentos complexos entre os campos e para isso basta clicar sobre a informaçaõq eu desejamos editar e arrastar o vaLor que iremos utilizar da caixa da caixa Atributos para a acixa Indicadores.<br /><br />Cada view possui campos específicos porém temos trê campos muito utilizados que são essenciais para a views mais corriqueiras como Colunas, Barras, Pizza, Distribuição Linear e outros. Estes campos são:<br />
+	<ul>
+		<li>Indicadores: São os totalizadores queserão utilizados, temos pré-definidos os totalizadores de média, contagem, duração e etc (estes ficam em Negrito></li>
+		<li>Dimensões: São os atributos que serão utilizados para calcular o indicador, neste caso temos todos os atributos tal qual contidos em nosso log de eventos.</li>
+		<li>Ordenação: Esse define a ordenação a ser aplicada, nesse caso podemos ordenar por atributo ou indicador, em ordem crescente e decrescente.</li>
+	</ul>
+
+<br />Em seguida, após criarmos nossos campos e definirmos os dados a serem analisados pela view, basta aplicar as modificações e, por fim, publicar nosso dash. Todos os dashs, mesmo após publicados, podem ser editados a partir de suas respectivas telas pelo ícone de configurações no canto superior direito da tela.<br />
+Para criarmos um rank ou limitarmos os resultados exibidos pelas views, seja por melhor performance ou geração de indicadores mais eficientes, precisamos sempre limitar os resultados nas configurações da view (isso é uma das boas práticas a serem adotadas para que não tenhamos problemas de proformance).<br />Para criarmos um rank basta usarmos a funcionalidade de limite juntamente com a ordenação, dessa forma criamos um rank seja do maior para menor ou vice e versa, e definimos os itens a partir do número limite.
+</p>
+
+<p>Ainda no dashboard, a tela de apresentação é ilimitada verticalmente o que permite organizar os itens de maneira mais fluída e responsiva porém traz impactos na performance de carregamento em virtude do tamanho e quantidade de dados e views apresentadas. Em virtude a isso, a única limitação para criação do dashboard é a criatividade, habilidade e performance esperada, podendo dessa forma criarmos um diagnóstico completo do processo em uma única tela.</p>
+
+<p>Por fim, podemos exportar o conteúdo da dashboard em um arquivo .json, isso é importante pois nos permite "clonar" essa view para outros abientes, contato que os dados possuam as mesmas nomenclaturas.</p>
