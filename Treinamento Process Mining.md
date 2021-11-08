@@ -163,7 +163,7 @@ Para criarmos um rank ou limitarmos os resultados exibidos pelas views, seja por
 <h1>Aula 4</h1>
 <h2>Analise de Conformidade</h2>
 <h3>Modelos de Referência</h3>
-<p>em linhas gerais, os modelos de referência são as regras que padronizam o nosso processo e que fiscalizam quando há fugas.</p>
+<p>Em linhas gerais, os modelos de referência são as regras que padronizam o nosso processo e que fiscalizam quando há fugas.</p>
 
 <p>Para criarmos um novo modelo de referência basta irmos ao menú dedicado e criar um novo modelo, mantendo todas as flags ativas clicamos em modelo e, em seguida definimos as etapas e transições esperadas para o processo arastando os respectivos itens para a área de plotagem e definindo as ligações entre cada transição.<br /><br />Aqui, cada ícone representa uma estrutura do processo, sendo cada uma delas:
 	<ul>
@@ -175,6 +175,41 @@ Para criarmos um rank ou limitarmos os resultados exibidos pelas views, seja por
 		<li>Retângulo: Subprocesso → define um processo aninhado ao processo principal, como consequencia ou depêndencia.</li>
 	</ul>
 <br />
-pausa em https://youtu.be/6T7092a09gI?t=3161
+A partir da configuração do nosso modelo de referência temos as fugas de processo que podem ser observadas pelo painel de conformidade. Lá temos a vizualização das fugas de modo detalhado, com seus percentuais de fuga, variações e demais detalhes acerca da saúde do processo. Além do mais conseguimos auditar essas fugas mais facilmente, observando o fluxo dos processos não conformes. <br /> Também podemos criar múltiplos modelos de referência para analizá-los e compará-los na tela de compliance. Desse modo, quando temos um processo com mais de uma vertente, podemos observar de maneira mais simples, como essas vertentes performam, seus comparativos, proporções e demais analises, o que é útil tanto para observar os processos induvidualmente, analisar melhorias em implementação, ajustar comportamentos nocivos ao processo ou adequação de processos com grande número de variações.
 </p>
+<h3>Compliance</h3>
+<p>Dentro da tela de compliance temos diversas opções como o Analise Global, Analise por Caso e o Kanban. Por hora iremos falar a respeito da Analise Global.<br /><br /> Na analise global aplicamos os Modelos de Referência criados aos dados do processo, desse modo vemos em tela os resultados do modelo de referência aplicado, as fugas, variações e erros no processo pré-definido. Aqui temos os indicadores de saúde do processo mais detalhados, com os apontamentos das fugas encontradas, de modo a podermos diagnosticar essas variações facilmente. Ao acedermos á lista de casos em uma fuga e abrirmos o detalhamento de um dos casos podemos ver cada etapa individualmente, com cada etapa separada e o registro da fuga destacado.<br />Essa ferramenta tem uma ótima aplicacão para monitoramento e, tabém, auditoria de processos, pois permite ao auditor, analizar as fugas e tomar ações direcioandas ao problema específico.</p>
 
+<h2>Exercício 1 - Avaliação de Tempos</h2>
+
+<p> Carregar o log de eventos do Pronto Atendimento em ./src/databases/LogSaude.csv</p>
+<ul>
+	<li>1. Quantos pacientes deram entrada com sintoma de AVC (I64)? Resposta:  4 casos [true]</li>
+	<li>2. Para pacientes com Sintoma de AVC (CID I64) qual o tempo entre as atividades Retirada de Senha e Realização de Tomografia de Crânio? Resposta: 52,33 min
+		<ul>
+			<li>Quantos casos com sintoma de AVC tiveram tempo maior que 25 minutos entre atividades Retirada de Senha e Realização de Tomografia de Crânio? Resposta: 3</li>
+		</ul>
+	</li>
+	<li>3. Qual o tempo médio entre as atividades de Retirada de Senha até Triagem? Resposta: </li>
+	<li>4. Qual o tempo médio entre Triagem e Consulta? Por Nível de Urgência? 32,98</li>
+</ul>
+
+<p>Criar um painel com essas avaliações.</p>
+
+<h1>Aula 5</h1>
+<h2>Exercício - 2</h2>
+<p>
+Correção dos exercícios propostos e novo exercício.
+
+<ul>
+	<li>1. Quantos pacientes deram entrada com sintoma de Dor Torácia (R073 e R074)? Resposta:  37 casos [true]</li>
+	<li>2. Para pacientes com Sintoma de Dor Torácia (R073 e R074) qual o tempo entre as atividades Atendimento e Realização de Tomografia de Crânio? Resposta: 52,33 min
+		<ul>
+			<li>Quantos casos com sintoma de AVC tiveram tempo maior que 10 minutos entre atividades Atendimento e Realização de Eletrocardiograma? Resposta: 25</li>
+		</ul>
+	</li>
+	<li>3. Qual o tempo médio entre as atividades de Atendimento até Triagem? Resposta: 8,38min </li>
+	<li>4. Qual o tempo médio entre Atendimento e Consulta? Por Nível de Urgência? 15.78min </li>
+</ul>
+
+</p>
